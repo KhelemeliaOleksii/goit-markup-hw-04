@@ -148,20 +148,15 @@ img{
     margin-right: 10px;
 }
 
-
-
- 
-
-
 /*------------------BODY-------------------*/
 .hero{
-    background-color: var(--hero-background-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
     url(../images/bg-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position:center;
+    background-size:1600px, 1600px;
+
 }
 .hero-container{
     padding-bottom: 106px;
@@ -509,9 +504,11 @@ img{
     border-bottom: 1px solid var(--product-example-card-border);
     flex-basis: calc(100% / 3 - var(--horisondal-content-offset-positive));
 }
-
-/* .products-example-item:focus, */
-.products-example-item:hover {
+.products-example-link{
+    display: block;
+}
+.products-example-link:focus,
+.products-example-link:hover {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
             0 4px 4px 0 rgba(0, 0, 0, 0.06),
             0 1px 1px 0 rgba(0, 0, 0, 0.12);
